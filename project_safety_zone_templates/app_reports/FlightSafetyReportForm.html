@@ -37,11 +37,6 @@
         </div>
 
 
-     <div class="form-group">
-    <label for="file">Example file input</label>
-    <input type="file" class="form-control-file" name="description">
-  </div>
-
 
         <button type="submit">Submit</button>
       </form>
@@ -54,7 +49,6 @@
 
 <script>
   console.log('js linked')
-
   function getCookie(name) {
       var cookieValue = null;
       if (document.cookie && document.cookie !== '') {
@@ -70,7 +64,7 @@
       }
       return cookieValue;
   }
-  var csrftoken = getCookie('csrftoken');
+  var csrftoken = getCookie('XSRF-TOKEN');
 
 console.log(csrftoken)
 
@@ -109,6 +103,7 @@ console.log(csrftoken)
     alert('report submitted')
 
   }
+
 
 </script>
 {% endblock %}
